@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<title> HTML Structure - Demonstration </title>
+<!--Style part-->
+<style>
+
+img{
+width: 150px;
+}
+</style>
+<!--End style part-->
+
+
+
+
+<!--Script part-->
+<script>
+
+function onClick()
+{
+
+  alert("This is a pop-up alert");
+}
+
+
+</script>
+
+<!--End script part -->
+</head>
+
+
+</body>
+
+<h1 id="helloText"> Hello Pesho ! </h1>
+<a href="http://google.com" target="_blank" id="clickButton" > go to Google </a>
+<hr width = "95%" size="3px"/>
+<img src= "images/Ninja.png" onclick="onClick()" id="image"/>
+<script>
+var myImage = document.getElementById("image");
+
+myImage.addEventListener('mouseover', doSomething);
+
+function doSomething(){
+  myImage.src = "http://www.pngall.com/wp-content/uploads/2016/06/Ninja-PNG-Pic.png";
+}
+
+</script>
+</body>
+
+
+
+</html>

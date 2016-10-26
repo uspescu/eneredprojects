@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise 2</title>
+    <style>
+        html{
+            font-size: 18px;
+            font-family: Helvetica, sans-serif;
+        }
+        table, th, td {
+            border-collapse: collapse;
+            padding-right: 40px;
+            padding-top: 10px;
+        }
+
+        .head{
+            background-color: #5fba23;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f5f796;
+        }
+        tr{
+           border:none;
+        }
+
+        td,th{
+            border-right: 2px solid #8e8e8e;
+            border-left: 2px solid #8e8e8e;
+        }
+        table{
+            border: 2px solid #8e8e8e;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <thead class="head">
+        <th> Contact Name</th>
+        <th> City</th>
+        <th> Country</th>
+        <th> Is Promoted</th>
+    </thead>
+    <tr>
+        <td> Maria Anders</td>
+        <td> Berlin</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1280px-Flag_of_Germany.svg.png" style="height:12px; width:23px" /> Germany</td>
+        <td> <input type="checkbox" disabled></td>
+
+    </tr>
+    <tr>
+        <td> Ana Trujillo</td>
+        <td> M&eacute;xico D.F.</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Mexico_(reverse).png" style="height:12px; width:23px" /> Mexico</td>
+        <td> <input type="checkbox" disabled></td>
+    </tr>
+    <tr>
+        <td> Antonio Moreno</td>
+        <td> M&eacute;xico D.F.</td>
+        <td> <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Mexico_(reverse).png" style="height:12px; width:23px" /> Mexico</td>
+        <td> <input type="checkbox" disabled checked></td>
+    </tr>
+    <tr>
+        <td> Thomas Hardy</td>
+        <td>London</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png" style="height:12px; width:23px" />UK</td>
+        <td> <input type="checkbox" disabled></td>
+    </tr>
+</table>
+</body>
+</html>

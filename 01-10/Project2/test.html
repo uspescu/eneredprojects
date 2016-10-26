@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Row And Column Spans</title>
+    <style>
+
+    body {
+font-family: Consolas, monospace;
+
+    }
+
+    table{border-collapse:collapse;}
+    td{
+      padding:20px;
+      border: 2px solid black;
+      solid: #000;
+      font-size: 20px;
+    }
+
+
+.row1 td{
+  text-align: right;
+  padding: 15px;
+  background:#fcf799;
+  
+}
+
+.row2{
+  background: yellow;
+}
+
+#blue{
+  background: blue;
+  color: white;
+
+}
+
+
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <table cellspacing="0">
+      <tr class="row1">
+        <td colspan="4">123</td>
+      </tr>
+
+      <tr class="row2">
+        <td> 1 </td>
+        <td> 2 </td>
+        <td> 3 </td>
+        <td id="blue"> + </td>
+      </tr>
+
+      <tr class="row2">
+          <td> 4 </td>
+          <td> 5 </td>
+          <td> 6 </td>
+          <td id="blue"> - </td>
+        </tr>
+
+        <tr class="row2">
+            <td> 7 </td>
+            <td> 8 </td>
+            <td> 9 </td>
+            <td id="blue"> * </td>
+          </tr>
+
+          <tr class="row2">
+            <td colspan="2"> 0 </td>
+            <td id="blue"> . </td>
+            <td id="blue"> / </td>
+          </tr>
+
+    </table>
+  </body>
+</html>

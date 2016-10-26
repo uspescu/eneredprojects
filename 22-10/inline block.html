@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>inline</title>
+    <style>
+
+        html{
+            margin: 0px;
+        }
+        a{
+            text-decoration: none;
+            color: #FFF;
+        }
+        a:hover{
+            color: #C8C5C5;
+        }
+
+        ul{
+            border: 12px solid #175994;
+            margin: 2px;
+            padding: 0px;
+            width: 470px;
+            list-style-type: none;
+            background: linear-gradient(lightblue 5%,#F3F3F3 10%, #C8C5C5 20%, #F3F3F3 80%, lightblue 100%);
+        }
+
+        li{
+            display: inline-block;
+            border-right: 1px solid black;
+            padding: 5px;
+        }
+
+        .col2{
+            border-right: none;
+        }
+
+        .col3{
+            margin-top: 1px;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            background: linear-gradient(lightblue 5%,#5F92BF 10%, #0F4D85 30%, #5F92BF 80%, lightblue 100%);
+        }
+
+        .col4{
+            border-right: none;
+        }
+
+        .frame{
+            border: 2px solid #0F4D85;
+            width: 500px;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="frame">
+<ul>
+    <li class="col1"> Item 1 </li>
+    <li class="col2"> Item 2 </li>
+    <li class="col3"><a href="#"> Hovered item list</a></li>
+    <li class="col4"> Some longer item 4</li>
+
+</ul>
+    </div>
+
+<br/>
+<table width="125">
+    <tr>
+        <td onMouseover="this.style.backgroundColor='#175994'" onMouseout="this.style.backgroundColor='white'"> Menu item 1 </td>
+    </tr>
+    <tr>
+        <td onMouseover="this.style.backgroundColor='#175994'" onMouseout="this.style.backgroundColor='white'"> Menu item 2</td>
+    </tr>
+
+</table>
+</body>
+</html>

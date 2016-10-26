@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pseudoselectors</title>
+    <style type="text/css">
+        table{
+            border: solid black 1px;
+        }
+        /*Pentru randuri pare ---------------------------*/
+        tr:nth-child(2n){
+            background-color: #00FF00;
+        }
+        /*Pentru randuri impare --------------------------*/
+        tr:nth-child(2n+1){
+            background-color: #66FF66;
+        }
+
+        /* Pentru primul rand -------------------------------*/
+        tr:nth-child(1){
+            color: white;
+            background-color: #888888
+        }
+        /*Pentru ultimii 4 copii -------------------------------*/
+        tr:nth-last-child(1), tr:nth-last-child(2), tr:nth-last-child(3), tr:nth-last-child(4){
+            color: white;
+            background-color: #FF0000;
+        }
+        /* Pentru ultimul copil (tr) -----------------------------*/
+        tr:last-child{
+            color: white;
+            background-color: #880000;
+        }
+        /* Pentru cel care includ "Exams"-----------------*/
+        tr[tag*="Exams"]{
+            color:white;
+            background-color: #FF0000;
+        }
+
+
+    </style>
+</head>
+<body>
+<table>
+    <tr><th>Lecture</th><th> Files </th></tr>
+    <tr><td>0. Course Itroduction</td> <td>00. Fundamentals-of-CSharp-Course-Introduction.pptx <br /> IT Academy Graduest Season 2009 2010.pptx<br/></td></tr>
+    <tr><td>1.Introducton to Programming</td> <td> 01.Intntro of programming.pptx<br/> 01. Intro-Program-demos.zip<br/></td></tr>
+    <tr><td>2.Primitive Data Types and Var</td> <td> 0.2 Primitive data types and var.pptx <br/>02. Primitive-types-var-demos.zip <br/></td></tr>
+    <tr><td>3.Operators express demos</td> <td> 0.3 Operators express demos.pptx <br/>03. Operators express demos.zip <br/></td></tr>
+    <tr><td>4. Console Input/Output</td> <td> 0.4 Consle.Input-output.pptx<br/> 04.Console-demos.zip <br/> </td></tr>
+    <tr><td>5.Conditional statements </td> <td> Conditional statements.pptx<br/> Conditional-statements-demos.zip <br/> </td></tr>
+    <tr><td>6. Loops</td> <td> 0.6 Loops.pptx<br/> 0.6.Loops-demos.zip <br/> </td></tr>
+    <tr><td>7. Arrays</td> <td> 0.7 Arrays.pptx<br/> 0.7Arrays-demos.zip <br/> </td></tr>
+    <tr><td>8. Numeral Systems</td> <td> 0.6 Numeral-Systems.pptx<br/> 06.Numeral-systems.zip <br/> </td></tr>
+    <tr><td>9. Methods</td> <td> 0.9 Methods.pptx<br/> 09.Methodss-demos.zip <br/> </td></tr>
+    <tr tag="Sample Intermediate Exams"> <td>Sample Intermediate exams</td><td>CSharp-Fundamentals-Sample-Intermediate-Esxam Variant 1.docx<br/> CSharp-Fundamentals-Sample-Intermediate-Exam Variant 2.docx<br/>Csharp Fundamental-Sample-Intermediate-Exam variant 3.docx<br/></td></tr>
+    <tr tag="Intermediate Exams"> <td>Intermediate Exams</td><td>CSharp-Fundamentals-Itermediate-Exam-Variant-9.doc<br/> CSharp-Fundamentals-Intermediate-Exam Variant-10.doc</td></tr>
+    <tr><td>10.Recursion</td> <td>10.Recursion.pptx<br/> 10.Recursion-Demos.zip<br/> </td></tr>
+    <tr><td>11. Creating and Using Objects</td> <td> 11.Using_classes-and-Objects.pptx<br/>11.Creating-Using-Objects-Demos.zip <br/></td></tr>
+    <tr><td>12. Exceptions Handling</td> <td> 12.Exceptions-Handling.pptx<br/>11.Exceptions-demos.zip <br/></td></tr>
+    <tr><td>13. Creating and Using Objects</td> <td> 13.Using_classes-and-Objects.pptx<br/>13.Creating-Using-Objects-Demos.zip <br/></td></tr>
+    <tr><td>14. Creating and Using Objects</td> <td> 14.Using_classes-and-Objects.pptx<br/>14.Creating-Using-Objects-Demos.zip <br/></td></tr>
+    <tr><td>15. Creating and Using Objects</td> <td> 15.Using_classes-and-Objects.pptx<br/>15.Creating-Using-Objects-Demos.zip <br/></td></tr>
+    <tr><td>16. Creating and Using Objects</td> <td> 16.Using_classes-and-Objects.pptx<br/>16.Creating-Using-Objects-Demos.zip <br/></td></tr>
+    <tr><td>17. Creating and Using Objects</td> <td> 17.Using_classes-and-Objects.pptx<br/>17.Creating-Using-Objects-Demos.zip <br/></td></tr>
+    <tr><td>18. Creating and Using Objects</td> <td> 18.Using_classes-and-Objects.pptx<br/>18.Creating-Using-Objects-Demos.zip <br/></td></tr>
+    <tr><td>19. Creating and Using Objects</td> <td> 19.Using_classes-and-Objects.pptx<br/>19.Creating-Using-Objects-Demos.zip <br/></td></tr>
+    <tr><td>20. Creating and Using Objects</td> <td> 20.Using_classes-and-Objects.pptx<br/>20.Creating-Using-Objects-Demos.zip <br/></td></tr>
+    <tr><td>21. Creating and Using Objects</td> <td> 21.Using_classes-and-Objects.pptx<br/>21.Creating-Using-Objects-Demos.zip <br/></td></tr>
+    <tr><td>22. Creating and Using Objects</td> <td> 22.Using_classes-and-Objects.pptx<br/>22.Creating-Using-Objects-Demos.zip <br/></td></tr>
+    <tr><td>23. Creating and Using Objects</td> <td> 23.Using_classes-and-Objects.pptx<br/>23.Creating-Using-Objects-Demos.zip <br/></td></tr>
+    <tr><td>24. Creating and Using Objects</td> <td> 24.Using_classes-and-Objects.pptx<br/>24.Creating-Using-Objects-Demos.zip <br/></td></tr>
+    <tr><td>25. Creating and Using Objects</td> <td> 25.Using_classes-and-Objects.pptx<br/>25.Creating-Using-Objects-Demos.zip <br/></td></tr>
+    <tr><td>26. Creating and Using Objects</td> <td> 26.Using_classes-and-Objects.pptx<br/>26.Creating-Using-Objects-Demos.zip <br/></td></tr>
+</table>
+</body>
+</html>
