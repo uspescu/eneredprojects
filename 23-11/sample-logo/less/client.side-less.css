@@ -1,0 +1,76 @@
+.container {
+  width: 970px;
+  margin: 0 auto;
+  color: white;
+}
+body {
+  background: -webkit-linear-gradient(#be8dff, #8f3aff);
+  /* For Safari 5.1 to 6.0 */
+}
+body a,
+body h1,
+body h2,
+body ul,
+body li {
+  margin: 0;
+}
+body header {
+  margin-top: 20px;
+}
+body header img {
+  float: left;
+}
+body header form {
+  float: right;
+}
+body header form input {
+  background-color: #a25bff;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+body header form input:last-child {
+  border: 1px solid white;
+  padding: 5px 15px 5px 15px;
+  color: #fff;
+}
+body .navigation {
+  clear: both;
+  padding-top: 30px;
+  overflow: hidden;
+  margin-left: 41px;
+}
+body .navigation ul {
+  list-style-type: none;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  max-width: 666px;
+}
+body .navigation ul li {
+  display: inline;
+  padding: 20px;
+}
+body section {
+  float: left;
+  width: 70%;
+}
+body section .first {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 15px;
+}
+body aside {
+  float: right;
+  width: 28%;
+}
+body aside .right {
+  border: 1px solid black;
+  margin: 55px 0 -32px 15px;
+  padding: 7px;
+}
+body footer h2 {
+  padding-top: 25px;
+  clear: both;
+  text-align: center;
+}
