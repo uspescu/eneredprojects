@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM3ex2</title>
+</head>
+<body>
+<h1 id="intro1"> My first page</h1>
+<p id="demo1"> Hello World!</p>
+<script>
+    var myText = document.getElementById("intro1").firstChild.nodeValue;
+    document.getElementById("demo1").innerHTML = myText;
+</script>
+</body>
+</html>

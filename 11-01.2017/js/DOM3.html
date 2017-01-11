@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM3</title>
+</head>
+<body>
+<h1 id="intro"> My first page</h1>
+<p id="demo"> Hello!</p>
+<script>
+    var myText = document.getElementById("intro").childNodes[0].nodeValue;
+    document.getElementById("demo").innerHTML = myText;
+</script>
+
+<p> Hello World!</p>
+<div>
+    <p> The DOM is very useful !</p>
+    <p> This example demmonstrates the <b> document.body</b> property</p>
+
+</div>
+
+
